@@ -1,0 +1,10 @@
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\bin\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.deps.json
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\bin\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.dll
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\bin\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.pdb
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.AssemblyInfoInputs.cache
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.AssemblyInfo.cs
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.csproj.CoreCompileInputs.cache
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.dll
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.pdb
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.Build\obj\Debug\netstandard2.0\Gainsco.ClaimCenter.Build.csproj.AssemblyReference.cache
