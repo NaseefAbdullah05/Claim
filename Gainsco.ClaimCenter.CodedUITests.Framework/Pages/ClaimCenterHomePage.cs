@@ -54,7 +54,10 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = "//div[@id='TabBar-ClaimTab']")]
         public IWebElement ClaimTab { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='TabBar:ClaimTab:ClaimTab_FNOLWizard-textEl']")]
+        [FindsBy(How = How.XPath, Using = "//div[@id='TabBar-ClaimTab']/div[3]/div")]
+        public IWebElement ClaimTabDownArrow { get; set; }
+
+        [FindsBy(How = How.XPath, Using = "//*[@id='TabBar-ClaimTab-ClaimTab_FNOLWizard']")]
         public IWebElement NewClaimText { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//*[@id='ClaimSummary-ClaimSummaryScreen-ttlBar']")]

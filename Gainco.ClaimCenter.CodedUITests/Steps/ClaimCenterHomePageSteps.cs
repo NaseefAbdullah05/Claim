@@ -298,6 +298,20 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
+        [When(@"I click on claim tab down arrow")]
+        public void WhenIClickOnClaimTabDownArrow()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.ClaimTabDownArrow.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+
         [When(@"I press enter on the new claim")]
         public void WhenIPressEnterOnTheNewClaim()
         {

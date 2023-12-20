@@ -17,9 +17,11 @@ Given I am on the desktop activities screen
 When I click on the claim tab
 Then I am redirected to claims summary screen
 
+@AllScenarios
 Scenario: New claim menu display under claims tab
-Given I am on the claims summary screen
-When I keydown on the claim tab
+Given I am on the desktop activities screen
+#When I keydown on the claim tab
+When I click on claim tab down arrow
 Then claim menu should be visible
 
 Scenario: Find policy screen redirection
