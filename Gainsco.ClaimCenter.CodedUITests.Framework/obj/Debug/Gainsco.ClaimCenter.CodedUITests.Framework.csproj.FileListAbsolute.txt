@@ -46,9 +46,9 @@ C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gai
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\bin\Debug\WebDriver.xml
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\bin\Debug\WebDriver.Support.xml
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
-C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.AssemblyReference.cache
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.ResolveComReference.cache
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.CoreCompileInputs.cache
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.CopyComplete
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.Training.CodedUITests.Framework.dll
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.Training.CodedUITests.Framework.pdb
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.AssemblyReference.cache

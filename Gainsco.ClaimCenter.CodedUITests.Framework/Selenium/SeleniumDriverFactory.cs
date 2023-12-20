@@ -99,10 +99,10 @@ namespace Gainsco.Policy.CodedUITests.Framework.Selenium
                             desiredCapability.SetCapability("platform", "Windows 10");
                             desiredCapability.SetCapability("username", "jogainsco");
                             desiredCapability.SetCapability("accessKey", "b5734581-5cf8-4c57-8a2c-a27f2196f4ea");
-                            desiredCapability.SetCapability("seleniumVersion", "2.5.0");
+                            desiredCapability.SetCapability("seleniumVersion", "3.5.0");
                             desiredCapability.SetCapability("chromedriverVersion", "");
 
-                            desiredCapability.SetCapability("version", "75.0");
+                            desiredCapability.SetCapability("version", "120.0");
                             desiredCapability.SetCapability("screenResolution", "1280x1024");
                             desiredCapability.SetCapability("commandTimeout", "600");
                             desiredCapability.SetCapability("idleTimeout", "200");
