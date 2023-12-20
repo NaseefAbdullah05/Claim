@@ -51,3 +51,4 @@ C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gai
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.CopyComplete
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.Training.CodedUITests.Framework.dll
 C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.Training.CodedUITests.Framework.pdb
+C:\Users\TXNA23\Source\Workspaces\IT\Gainsco\Integration\Gainsco.ClaimCenter\Gainsco.ClaimCenter.CodedUITests.Framework\obj\Debug\Gainsco.ClaimCenter.CodedUITests.Framework.csproj.AssemblyReference.cache
