@@ -36,19 +36,19 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[contains(text(),'Search or Create Policy')]")]
         public IWebElement SearchOrCreatePolicyText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:ttlBar']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-FNOLWizard_FindPolicyScreen-ttlBar']")]
         public IWebElement SearchOrCreatePolicyScreenTitleBarText { get; set; }        
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:policyNumber-inputEl']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-FNOLWizard_FindPolicyScreen-FNOLWizardFindPolicyPanelSet-policyNumber']")]
         public IWebElement PolicyNumberTextBox { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:date1-inputEl']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-FNOLWizard_FindPolicyScreen-FNOLWizardFindPolicyPanelSet-date1']")]
         public IWebElement LossDateTextBox { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:vin-inputEl']")]
         public IWebElement VinTextBox { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Search']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-FNOLWizard_FindPolicyScreen-FNOLWizardFindPolicyPanelSet-Search']")]
         public IWebElement SearchButton { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//div[@id='TabBar-ClaimTab']")]
@@ -66,13 +66,13 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[contains(text(),'Claim #')]")]
         public IWebElement ClaimNumberText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:3']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-FNOLWizard_FindPolicyScreen-FNOLWizardFindPolicyPanelSet-11']")]
         public IWebElement ClaimHistoryText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:PolicyResultLV:0:unselectButton']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-FNOLWizard_FindPolicyScreen-FNOLWizardFindPolicyPanelSet-PolicyResultLV-0-unselectButton']")]
         public IWebElement UnselectButton { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:Next-btnInnerEl']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-Next']")]
         public IWebElement NextButton { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//*[contains(text(),'Time : Time of Loss must be entered manually!!')]")]

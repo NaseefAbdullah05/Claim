@@ -119,9 +119,9 @@ testRunner.Then("I am redirected to claims summary screen", ((string)(null)), ((
 this.ScenarioSetup(scenarioInfo);
 #line 22
 testRunner.Given("I am on the desktop activities screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 24
+#line 23
 testRunner.When("I click on claim tab down arrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 24
 testRunner.Then("claim menu should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -129,16 +129,20 @@ testRunner.Then("claim menu should be visible", ((string)(null)), ((TechTalk.Spe
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Find policy screen redirection")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
         public virtual void FindPolicyScreenRedirection()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find policy screen redirection", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find policy screen redirection", new string[] {
+                        "AllScenarios"});
 #line 27
 this.ScenarioSetup(scenarioInfo);
 #line 28
-testRunner.Given("I am at the claim menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("I am on the desktop activities screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 29
-testRunner.When("I press enter on the new claim", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("I click on claim tab down arrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 30
+testRunner.And("I click new claim from menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
 testRunner.Then("I am redirected to find policy screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -146,18 +150,20 @@ testRunner.Then("I am redirected to find policy screen", ((string)(null)), ((Tec
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Search button enabled on find policy screen")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
         public virtual void SearchButtonEnabledOnFindPolicyScreen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search button enabled on find policy screen", ((string[])(null)));
-#line 32
-this.ScenarioSetup(scenarioInfo);
-#line 33
-testRunner.Given("I am on the find policy screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search button enabled on find policy screen", new string[] {
+                        "AllScenarios"});
 #line 34
-testRunner.And("I enter policy number in the policy number text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+this.ScenarioSetup(scenarioInfo);
 #line 35
-testRunner.When("I click on the loss date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Given("I am on the find policy screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 36
+testRunner.And("I enter policy number in the policy number text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 37
+testRunner.When("I click on the loss date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 38
 testRunner.Then("search button is enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -170,13 +176,13 @@ testRunner.Then("search button is enabled", ((string)(null)), ((TechTalk.SpecFlo
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Policy number search results will display", new string[] {
                         "AllScenarios"});
-#line 39
-this.ScenarioSetup(scenarioInfo);
-#line 40
-testRunner.Given("search button is enabled on find policy screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 41
-testRunner.When("I click on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 42
+testRunner.Given("search button is enabled on find policy screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 43
+testRunner.When("I click on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 44
 testRunner.Then("policy search results will display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -184,16 +190,18 @@ testRunner.Then("policy search results will display", ((string)(null)), ((TechTa
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Time of loss error message will display")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
         public virtual void TimeOfLossErrorMessageWillDisplay()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Time of loss error message will display", ((string[])(null)));
-#line 44
-this.ScenarioSetup(scenarioInfo);
-#line 45
-testRunner.Given("I am on the policy search results screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 46
-testRunner.When("I click on next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Time of loss error message will display", new string[] {
+                        "AllScenarios"});
 #line 47
+this.ScenarioSetup(scenarioInfo);
+#line 48
+testRunner.Given("I am on the policy search results screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 49
+testRunner.When("I click on next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 50
 testRunner.Then("time of loss error message should display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -204,13 +212,13 @@ testRunner.Then("time of loss error message should display", ((string)(null)), (
         public virtual void AddressBookSearchScreenRedirection()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Address book search screen redirection", ((string[])(null)));
-#line 49
-this.ScenarioSetup(scenarioInfo);
-#line 50
-testRunner.Given("I am on the desktop activities screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 51
-testRunner.When("I click on address book tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 52
+this.ScenarioSetup(scenarioInfo);
+#line 53
+testRunner.Given("I am on the desktop activities screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 54
+testRunner.When("I click on address book tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 55
 testRunner.Then("I am redirected to address book search screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -223,15 +231,15 @@ testRunner.Then("I am redirected to address book search screen", ((string)(null)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Address book search results will display", new string[] {
                         "AllScenarios"});
-#line 55
-this.ScenarioSetup(scenarioInfo);
-#line 56
-testRunner.Given("I am on the search address book screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 57
-testRunner.And("I enter zipcode in the text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 58
-testRunner.When("I click on search button in search address book screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 59
+testRunner.Given("I am on the search address book screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 60
+testRunner.And("I enter zipcode in the text box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 61
+testRunner.When("I click on search button in search address book screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 62
 testRunner.Then("search results will display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -244,13 +252,13 @@ testRunner.Then("search results will display", ((string)(null)), ((TechTalk.Spec
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Group details screen page redirection", new string[] {
                         "AllScenarios"});
-#line 62
-this.ScenarioSetup(scenarioInfo);
-#line 63
-testRunner.Given("I am on the desktop activities screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 64
-testRunner.When("I click on administration tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 65
+this.ScenarioSetup(scenarioInfo);
+#line 66
+testRunner.Given("I am on the desktop activities screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 67
+testRunner.When("I click on administration tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 68
 testRunner.Then("I am redirected to group detail screen page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -263,15 +271,15 @@ testRunner.Then("I am redirected to group detail screen page", ((string)(null)),
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Message queues screen redirection", new string[] {
                         "AllScenarios"});
-#line 68
-this.ScenarioSetup(scenarioInfo);
-#line 69
-testRunner.Given("I am on the group detail screen page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 70
-testRunner.When("I click on monitoring tab on the left hand side", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 71
-testRunner.Then("I am redirected to message queues screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+this.ScenarioSetup(scenarioInfo);
 #line 72
+testRunner.Given("I am on the group detail screen page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 73
+testRunner.When("I click on monitoring tab on the left hand side", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 74
+testRunner.Then("I am redirected to message queues screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 75
 testRunner.And("I am verifying the status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

@@ -20,15 +20,17 @@ Then I am redirected to claims summary screen
 @AllScenarios
 Scenario: New claim menu display under claims tab
 Given I am on the desktop activities screen
-#When I keydown on the claim tab
 When I click on claim tab down arrow
 Then claim menu should be visible
 
+@AllScenarios
 Scenario: Find policy screen redirection
-Given I am at the claim menu
-When I press enter on the new claim 
+Given I am on the desktop activities screen
+When I click on claim tab down arrow
+And I click new claim from menu
 Then I am redirected to find policy screen
 
+@AllScenarios
 Scenario: Search button enabled on find policy screen
 Given I am on the find policy screen
 And I enter policy number in the policy number text box
@@ -41,6 +43,7 @@ Given search button is enabled on find policy screen
 When I click on search button
 Then policy search results will display
 
+@AllScenarios
 Scenario: Time of loss error message will display
 Given I am on the policy search results screen
 When I click on next button

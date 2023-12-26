@@ -284,6 +284,19 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+        [When(@"I click new claim from menu")]
+        public void WhenIClickNewClaimFromMenu()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.NewClaimText.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
 
         [When(@"I keydown on the claim tab")]
         public void WhenIKeydownOnTheClaimTab()
@@ -627,13 +640,15 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
         /// <summary>
         /// Scenario: Find policy screen redirection
         /// Given I am at the claim menu
-        /// When I press enter on the new claim
+        /// When I click on claim tab down arrow
+        /// When I click new claim from menu
         /// Then I am redirected to find policy screen
         /// </summary>
         private void RunScenarioFindPolicyScreen()
         {
-            GivenIAmAtTheClaimMenu();
-            WhenIPressEnterOnTheNewClaim();
+            GivenIAmOnTheDesktopActivitiesScreen();
+            WhenIClickOnClaimTabDownArrow();
+            WhenIClickNewClaimFromMenu();
             ThenIAmRedirectedToFindPolicyScreen();
         }
 
