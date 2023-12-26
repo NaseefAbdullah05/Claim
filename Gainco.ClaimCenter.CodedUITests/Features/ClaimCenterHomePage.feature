@@ -49,6 +49,7 @@ Given I am on the policy search results screen
 When I click on next button
 Then time of loss error message should display
 
+@AllScenarios
 Scenario: Address book search screen redirection
 Given I am on the desktop activities screen
 When I click on address book tab

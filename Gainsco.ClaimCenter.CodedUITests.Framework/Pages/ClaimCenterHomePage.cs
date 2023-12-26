@@ -81,25 +81,25 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard:FNOLWizard_FindPolicyScreen:FNOLWizardFindPolicyPanelSet:Claim_lossTime-inputEl']")]
         public IWebElement ClaimLossTimeDropdown { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='TabBar:AddressBookTab-btnWrap']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='TabBar-AddressBookTab']")]
         public IWebElement AddressBookTab { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//*[@id='TabBar:AdminTab-btnInnerEl']")]
         public IWebElement AdministrationTab { get; set; }        
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch:AddressBookSearchScreen:ttlBar']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch-AddressBookSearchScreen-ttlBar']")]
         public IWebElement AddressBookSearchScreenTitleBarText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch:AddressBookSearchScreen:AddressBookSearchDV:CCAddressBookSearchLocationInputSet:CCAddressBookAddressInputSet:globalAddressContainer:globalAddress:GlobalAddressBookAddressInputSet:PostalCode-inputEl']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@name='AddressBookSearch-AddressBookSearchScreen-AddressBookSearchDV-CCAddressBookSearchLocationInputSet-CCAddressBookAddressInputSet-globalAddressContainer-globalAddress-GlobalAddressBookAddressInputSet-PostalCode']")]
         public IWebElement ZipCodeTextBox { get; set; }      
 
-        [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'AddressBookSearchLV:0:DisplayName')]")]
+        [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'AddressBookSearch-AddressBookSearchScreen-AddressBookSearchLV-0-DisplayName_button')]")]
         public IWebElement ActionCollisionRepairDisplayName { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'ClaimSearchScreen_PrintButton-btnInnerEl')]")]
+        [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'ClaimSearchScreen_PrintButton')]")]
         public IWebElement PrintOrExportButton { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch:AddressBookSearchScreen:AddressBookSearchDV:SearchAndResetInputSet:SearchLinksInputSet:Search']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch-AddressBookSearchScreen-AddressBookSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search']")]
         public IWebElement SearchAddressBookSearchButton { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//*[@id='GroupDetailPage:GroupDetailScreen:ttlBar']")]
