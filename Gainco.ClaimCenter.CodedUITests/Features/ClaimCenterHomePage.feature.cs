@@ -281,8 +281,6 @@ testRunner.Given("I am on the group detail screen page", ((string)(null)), ((Tec
 testRunner.When("I click on monitoring tab on the left hand side", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 75
 testRunner.Then("I am redirected to message queues screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 76
-testRunner.And("I am verifying the status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

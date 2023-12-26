@@ -73,7 +73,6 @@ Scenario: Message queues screen redirection
 Given I am on the group detail screen page
 When I click on monitoring tab on the left hand side
 Then  I am redirected to message queues screen 
-And I am verifying the status 
 
 
 

@@ -84,7 +84,7 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='TabBar-AddressBookTab']")]
         public IWebElement AddressBookTab { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='TabBar:AdminTab-btnInnerEl']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='TabBar-AdminTab']")]
         public IWebElement AdministrationTab { get; set; }        
 
         [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch-AddressBookSearchScreen-ttlBar']")]
@@ -102,16 +102,16 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='AddressBookSearch-AddressBookSearchScreen-AddressBookSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search']")]
         public IWebElement SearchAddressBookSearchButton { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='GroupDetailPage:GroupDetailScreen:ttlBar']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='GroupDetailPage-GroupDetailScreen-ttlBar']")]
         public IWebElement GroupDetailScreenTitleBarText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='Admin:MenuLinks:Admin_Monitoring']/div/span")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='Admin-MenuLinks-Admin_Monitoring']")]
         public IWebElement MonitoringTab { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='MessagingDestinationControlList:MessagingDestinationControlListScreen:ttlBar']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='MessagingDestinationControlList-MessagingDestinationControlListScreen-ttlBar']")]
         public IWebElement MessagingDestinationControlListScreenTitleBarText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='MessagingDestinationControlList:MessagingDestinationControlListScreen:MessagingDestinationControlList_RestartMessagingEngineButton-btnInnerEl']")]
+        [FindsBy(How = How.XPath, Using = ".//*[@id='MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationControlList_RestartMessagingEngineButton']")]
         public IWebElement RestartMessagingEngineButton { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'MessagingDestinationsControlLV-body')]/div/div/table[1]/tbody/tr[1]/td[4]")]
