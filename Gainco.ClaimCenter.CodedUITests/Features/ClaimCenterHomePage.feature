@@ -74,6 +74,15 @@ Given I am on the group detail screen page
 When I click on monitoring tab on the left hand side
 Then  I am redirected to message queues screen 
 
+@AllScenarios
+Scenario: Basic information page redirection
+Given search button is enabled on find policy screen
+When I click on search button
+Then policy search results will display
+Given I select a time in time section
+When I click on next button
+Then I am redirected to basic information page
+
 
 
 

@@ -150,6 +150,12 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'MessagingDestinationsControlLV-body')]/div/div/table[12]/tbody/tr[1]/td[4]")]
         public IWebElement ContactMessageTransportStatusText { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[contains(@class, 'gw-DateValueWidget--ampm-button')]")]
+        public IWebElement AmPmButton { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_BasicInfoScreen-ttlBar']")]
+        public IWebElement BasicInformationTitleText { get; set; }
+
 
         public override void GoTo()
         {
@@ -313,6 +319,14 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
             {
                 return false;
             }
+
+        }
+        public virtual bool IsAtBasicInformationScreen()
+        {
+            SeleniumHelper.WaitUntilElementIsVisible(
+                    By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
+                    (x => x.BasicInformationTitleText)), WebDriver);
+            return SeleniumHelper.WaitUntilTextToBePresentInElement(BasicInformationTitleText, WebDriver, ClaimsConstants.BasicInformationText);
 
         }
 

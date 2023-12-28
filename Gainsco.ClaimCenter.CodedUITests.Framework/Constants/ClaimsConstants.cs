@@ -21,5 +21,6 @@ namespace Gainsco.Training.CodedUITests.Framework.Constants
         public static string GainscoText = "GAINSCO";
         public static string MessageQueuesText = "Message Queues";
         public static string StartedText = "Started";
+        public static string BasicInformationText = "Step 2 of 5: Basic information";
     }
 }

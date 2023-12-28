@@ -284,6 +284,31 @@ testRunner.Then("I am redirected to message queues screen", ((string)(null)), ((
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Basic information page redirection")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
+        public virtual void BasicInformationPageRedirection()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Basic information page redirection", new string[] {
+                        "AllScenarios"});
+#line 78
+this.ScenarioSetup(scenarioInfo);
+#line 79
+testRunner.Given("search button is enabled on find policy screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 80
+testRunner.When("I click on search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 81
+testRunner.Then("policy search results will display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 82
+testRunner.Given("I select a time in time section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 83
+testRunner.When("I click on next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 84
+testRunner.Then("I am redirected to basic information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

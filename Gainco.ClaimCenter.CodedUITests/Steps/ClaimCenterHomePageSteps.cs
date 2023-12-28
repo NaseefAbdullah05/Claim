@@ -251,6 +251,19 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+        [Given(@"I select a time in time section")]
+        public void GivenISelectATimeInTimeSection()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.AmPmButton.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
 
 
 
@@ -578,6 +591,19 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             try
             {
                 Assert.IsTrue(Pages.ClaimCenterHomePage.IsStatusStarted());
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+        [Then(@"I am redirected to basic information page")]
+        public void ThenIAmRedirectedToBasicInformationPage()
+        {
+            try
+            {
+                Assert.IsTrue(Pages.ClaimCenterHomePage.IsAtBasicInformationScreen());
             }
             catch (Exception ex)
             {
