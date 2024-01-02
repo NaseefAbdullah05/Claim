@@ -257,6 +257,7 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             try
             {
                 Pages.ClaimCenterHomePage.AmPmButton.Click();
+                Pages.ClaimCenterHomePage.AmPmButton.Click();
             }
             catch (Exception ex)
             {
@@ -442,6 +443,45 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+        [When(@"I select name information")]
+        public void WhenISelectNameInformation()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectNameInBasicInformation, 1);
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+        [When(@"I select relation information")]
+        public void WhenISelectRelationInformation()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectRelationInBasicInformation, 4);
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+        [When(@"I select a Car")]
+        public void WhenISelectACar()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.CarCheckBox.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+
+
 
 
 
@@ -610,6 +650,19 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+        [Then(@"I am redirected to claim information page")]
+        public void ThenIAmRedirectedToClaimInformationPage()
+        {
+            try
+            {
+                Assert.IsTrue(Pages.ClaimCenterHomePage.IsAtClaimInformationScreen());
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
 
 
 

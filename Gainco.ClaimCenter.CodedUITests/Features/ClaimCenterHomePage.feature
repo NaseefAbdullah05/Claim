@@ -83,6 +83,20 @@ Given I select a time in time section
 When I click on next button
 Then I am redirected to basic information page
 
+@AllScenarios
+Scenario: Claim Information page redirection
+Given search button is enabled on find policy screen
+When I click on search button
+Then policy search results will display
+Given I select a time in time section
+When I click on next button
+Then I am redirected to basic information page
+When I select name information
+And I select relation information
+And I select a Car
+When I click on next button
+Then I am redirected to claim information page
+
 
 
 

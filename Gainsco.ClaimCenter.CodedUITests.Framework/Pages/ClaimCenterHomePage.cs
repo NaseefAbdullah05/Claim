@@ -111,10 +111,10 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='MessagingDestinationControlList-MessagingDestinationControlListScreen-ttlBar']")]
         public IWebElement MessagingDestinationControlListScreenTitleBarText { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[@id='MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationControlList_RestartMessagingEngineButton']")]
+        [FindsBy(How = How.XPath,Using = ".//*[@id='MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationControlList_RestartMessagingEngineButton']")]
         public IWebElement RestartMessagingEngineButton { get; set; }
 
-        [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'MessagingDestinationsControlLV-body')]/div/div/table[1]/tbody/tr[1]/td[4]")]
+        [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'Messaging DestinationsControlLV-body')]/div/div/table[1]/tbody/tr[1]/td[4]")]
         public IWebElement FinancialsStatusText { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//*[contains(@id, 'MessagingDestinationsControlLV-body')]/div/div/table[2]/tbody/tr[1]/td[4]")]
@@ -155,6 +155,18 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
 
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_BasicInfoScreen-ttlBar']")]
         public IWebElement BasicInformationTitleText { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_BasicInfoScreen-PanelRow-BasicInfoDetailViewPanelDV-ReportedBy_Name']")]
+        public IWebElement SelectNameInBasicInformation { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_BasicInfoScreen-PanelRow-BasicInfoDetailViewPanelDV-Claim_ReportedByType']")]
+        public IWebElement SelectRelationInBasicInformation { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_BasicInfoScreen-PanelRow-RightPanel-FNOLWizard_BasicInfoRightPanelSet-0-InsuredVehicleDV-InsuredVehicleInputGroup-_checkbox']")]
+        public IWebElement CarCheckBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-ttlBar']")]
+        public IWebElement ClaimInformationTitleText { get; set; }
 
 
         public override void GoTo()
@@ -327,7 +339,20 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
                     By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
                     (x => x.BasicInformationTitleText)), WebDriver);
             return SeleniumHelper.WaitUntilTextToBePresentInElement(BasicInformationTitleText, WebDriver, ClaimsConstants.BasicInformationText);
+        }
 
+    
+        public virtual void SelectBasicInformation(IWebElement element, int index)
+        {
+            SeleniumHelper.SetDropDownListSelectedTextByIndex(element, index);
+        }
+
+        public virtual bool IsAtClaimInformationScreen()
+        {
+            SeleniumHelper.WaitUntilElementIsVisible(
+                    By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
+                    (x => x.ClaimInformationTitleText)), WebDriver);
+            return SeleniumHelper.WaitUntilTextToBePresentInElement(ClaimInformationTitleText, WebDriver, ClaimsConstants.ClaimInformationText);
         }
 
         public override bool IsAt()
