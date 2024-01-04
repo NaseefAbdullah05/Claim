@@ -97,6 +97,13 @@ And I select a Car
 When I click on next button
 Then I am redirected to claim information page
 
+@AllScenarios
+Scenario: Vehicle details page redirection
+Given I am at claim information page
+When I click on vehicle name button
+Then I am reidrected to vehicle details page
+
+
 
 
 

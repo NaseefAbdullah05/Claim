@@ -265,6 +265,18 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
+        [Given(@"I am at claim information page")]
+        public void GivenIAmAtClaimInformationPage()
+        {
+            try
+            {
+                RunScenarioClaimInformationPageRedirection();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
 
 
 
@@ -480,7 +492,18 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
-
+        [When(@"I click on vehicle name button")]
+        public void WhenIClickOnVehicleNameButton()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.VehicleNameButton.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
 
 
 
@@ -663,7 +686,18 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
-
+        [Then(@"I am reidrected to vehicle details page")]
+        public void ThenIAmReidrectedToVehicleDetailsPage()
+        {
+            try
+            {
+                Assert.IsTrue(Pages.ClaimCenterHomePage.IsAtVehicleDetailsScreen());
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
 
 
 
@@ -785,8 +819,39 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             ThenIAmRedirectedToGroupDetailScreenPage();
         }
 
+        ///<summary
+        //Scenario: Claim Information page redirection
+        /// Given search button is enabled on find policy screen
+        ///When I click on search button
+        ///Then policy search results will display
+        ///Given I select a time in time section
+        ///When I click on next button
+        ///Then I am redirected to basic information page
+        ///When I select name information
+        ///And I select relation information
+        ///And I select a Car
+        ///When I click on next button
+        ///Then I am redirected to claim information page
+        ///</summary>
+        
+        private void RunScenarioClaimInformationPageRedirection()
+        {
+            GivenSearchButtonIsEnabledOnFindPolicyScreen();
+            WhenIClickOnSearchButton();
+            ThenPolicySearchResultsWillDisplay();
+            GivenISelectATimeInTimeSection();
+            WhenIClickOnNextButton();
+            ThenIAmRedirectedToBasicInformationPage();
+            WhenISelectNameInformation();
+            WhenISelectRelationInformation();
+            WhenISelectACar();
+            WhenIClickOnNextButton();
+            ThenIAmRedirectedToClaimInformationPage();
 
-        #endregion
+        }
+
+
+#endregion
 
 
     }

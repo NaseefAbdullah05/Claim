@@ -344,6 +344,25 @@ testRunner.Then("I am redirected to claim information page", ((string)(null)), (
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Vehicle details page redirection")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
+        public virtual void VehicleDetailsPageRedirection()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Vehicle details page redirection", new string[] {
+                        "AllScenarios"});
+#line 101
+this.ScenarioSetup(scenarioInfo);
+#line 102
+testRunner.Given("I am at claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 103
+testRunner.When("I click on vehicle name button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 104
+testRunner.Then("I am reidrected to vehicle details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

@@ -23,5 +23,6 @@ namespace Gainsco.Training.CodedUITests.Framework.Constants
         public static string StartedText = "Started";
         public static string BasicInformationText = "Step 2 of 5: Basic information";
         public static string ClaimInformationText = "Step 3 of 5: Add claim information";
+        public static string VehicleDetailsText = "Vehicle Details";
     }
 }
