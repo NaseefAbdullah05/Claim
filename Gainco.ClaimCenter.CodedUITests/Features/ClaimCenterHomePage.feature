@@ -103,6 +103,15 @@ Given I am at claim information page
 When I click on vehicle name button
 Then I am reidrected to vehicle details page
 
+@AllScenarios
+Scenario: Driver details page redirection
+Given I am at claim information page
+When I click on vehicle name button
+Then I am reidrected to vehicle details page
+When I select operable option
+And I click add driver button
+Then I am redirected to driver details page
+
 
 
 

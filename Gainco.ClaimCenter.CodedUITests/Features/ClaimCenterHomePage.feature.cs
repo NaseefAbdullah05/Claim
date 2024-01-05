@@ -363,6 +363,31 @@ testRunner.Then("I am reidrected to vehicle details page", ((string)(null)), ((T
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Driver details page redirection")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
+        public virtual void DriverDetailsPageRedirection()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Driver details page redirection", new string[] {
+                        "AllScenarios"});
+#line 107
+this.ScenarioSetup(scenarioInfo);
+#line 108
+testRunner.Given("I am at claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 109
+testRunner.When("I click on vehicle name button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 110
+testRunner.Then("I am reidrected to vehicle details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 111
+testRunner.When("I select operable option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 112
+testRunner.And("I click add driver button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 113
+testRunner.Then("I am redirected to driver details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

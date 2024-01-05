@@ -174,6 +174,15 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLVehicleIncidentPopup-FNOLVehicleIncidentScreen-0']")]
         public IWebElement VehicleDetailsTitleText { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLVehicleIncidentPopup-FNOLVehicleIncidentScreen-Operable']")]
+        public IWebElement SelectOperable { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLVehicleIncidentPopup-FNOLVehicleIncidentScreen-OccupantLV_tb-AddDriverButton']")]
+        public IWebElement AddDriverButton { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLContactPopup-FNOLContactScreen-ttlBar']")]
+        public IWebElement DriverDetailsTitleText { get; set; }
+
 
         public override void GoTo()
         {
@@ -365,7 +374,16 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
             SeleniumHelper.WaitUntilElementIsVisible(
                     By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
                     (x => x.VehicleDetailsTitleText)), WebDriver);
-            return SeleniumHelper.WaitUntilTextToBePresentInElement(VehicleDetailsTitleText, WebDriver, ClaimsConstants.ClaimInformationText);
+            return SeleniumHelper.WaitUntilTextToBePresentInElement(VehicleDetailsTitleText, WebDriver, ClaimsConstants.VehicleDetailsText);
+        }
+
+        public virtual bool IsAtDriverDetailsScreen()
+        {
+            SeleniumHelper.WaitUntilElementIsVisible(
+                    By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
+                    (x => x.VehicleDetailsTitleText)), WebDriver);
+            var a = DriverDetailsTitleText.Text;
+            return SeleniumHelper.WaitUntilTextToBePresentInElement(DriverDetailsTitleText, WebDriver, ClaimsConstants.DriverDetailsText);
         }
 
         public override bool IsAt()

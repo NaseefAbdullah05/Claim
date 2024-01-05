@@ -504,6 +504,32 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+        [When(@"I select operable option")]
+        public void WhenISelectOperableOption()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectOperable, 2);
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+        [When(@"I click add driver button")]
+        public void WhenIClickAddDriverButton()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.AddDriverButton.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+
 
 
 
@@ -698,6 +724,20 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+
+        [Then(@"I am redirected to driver details page")]
+        public void ThenIAmRedirectedToDriverDetailsPage()
+        {
+            try
+            {
+                Assert.IsTrue(Pages.ClaimCenterHomePage.IsAtDriverDetailsScreen());
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
 
 
 
