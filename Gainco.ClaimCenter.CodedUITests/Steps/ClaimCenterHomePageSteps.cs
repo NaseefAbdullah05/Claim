@@ -278,6 +278,18 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
+        [Given(@"I am at driver details page")]
+        public void GivenIAmAtDriverDetailsPage()
+        {
+            try
+            {
+                RunScenarioDriverDetailsPageRedirection();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
 
 
         #endregion
@@ -529,7 +541,57 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
+        [When(@"I select a person")]
+        public void WhenISelectAPerson()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectPerson, 1);
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
 
+        [When(@"relation to insured")]
+        public void WhenRelationToInsured()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectRelationToInsuredAtDriverPage, 1);
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+        [When(@"I click ok button")]
+        public void WhenIClickOkButton()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.OkButton.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+        [When(@"I click ok button on vehicle details page")]
+        public void WhenIClickOkButtonOnVehicleDetailsPage()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.OkButtonOnVehicleDetails.Click();
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
 
 
 
@@ -890,8 +952,28 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
 
         }
 
+        ///<summary>  
+        ///Scenario: Driver details page redirection
+        ///Given I am at claim information page
+        /// When I click on vehicle name button
+        ///Then I am reidrected to vehicle details page
+        ///When I select operable option
+        ///And I click add driver button
+        ///Then I am redirected to driver details page
+        ///</summary>
+        public void RunScenarioDriverDetailsPageRedirection()
+        {
+            GivenIAmAtClaimInformationPage();
+            WhenIClickOnVehicleNameButton();
+            ThenIAmReidrectedToVehicleDetailsPage();
+            WhenISelectOperableOption();
+            WhenIClickAddDriverButton();
+            ThenIAmRedirectedToDriverDetailsPage();
+        }
 
-#endregion
+
+
+        #endregion
 
 
     }

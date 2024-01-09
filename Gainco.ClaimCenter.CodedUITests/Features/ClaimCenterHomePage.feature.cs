@@ -388,6 +388,33 @@ testRunner.Then("I am redirected to driver details page", ((string)(null)), ((Te
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Back to Claim information page")]
+        [NUnit.Framework.CategoryAttribute("AllScenarios")]
+        public virtual void BackToClaimInformationPage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Back to Claim information page", new string[] {
+                        "AllScenarios"});
+#line 116
+this.ScenarioSetup(scenarioInfo);
+#line 117
+testRunner.Given("I am at driver details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 118
+testRunner.When("I select a person", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 119
+testRunner.And("relation to insured", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 120
+testRunner.When("I click ok button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 121
+testRunner.Then("I am reidrected to vehicle details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 122
+testRunner.When("I click ok button on vehicle details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 123
+testRunner.Then("I am redirected to claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

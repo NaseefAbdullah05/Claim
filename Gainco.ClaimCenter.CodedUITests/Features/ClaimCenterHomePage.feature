@@ -112,6 +112,16 @@ When I select operable option
 And I click add driver button
 Then I am redirected to driver details page
 
+@AllScenarios
+Scenario: Back to Claim information page
+Given I am at driver details page
+When I select a person
+And relation to insured
+When I click ok button
+Then I am reidrected to vehicle details page
+When I click ok button on vehicle details page
+Then I am redirected to claim information page
+
 
 
 

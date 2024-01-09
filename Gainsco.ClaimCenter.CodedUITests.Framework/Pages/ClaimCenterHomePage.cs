@@ -183,6 +183,23 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLContactPopup-FNOLContactScreen-ttlBar']")]
         public IWebElement DriverDetailsTitleText { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLContactPopup-FNOLContactScreen-ContactDV-Driver_Picker']")]
+        public IWebElement SelectContractDriver { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLContactPopup-FNOLContactScreen-ContactDV-FNOLContactInputSet-RelationToInsured']")]
+        public IWebElement SelectRelationToInsured { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLContactPopup-FNOLContactScreen-ContactDV-Driver_Picker']")]
+        public IWebElement SelectPerson { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLContactPopup-FNOLContactScreen-ContactDV-FNOLContactInputSet-RelationToInsured']")]
+        public IWebElement SelectRelationToInsuredAtDriverPage { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLContactPopup-FNOLContactScreen-Update']")]
+        public IWebElement OkButton { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLVehicleIncidentPopup-FNOLVehicleIncidentScreen-Update']")]
+        public IWebElement OkButtonOnVehicleDetails { get; set; }
 
         public override void GoTo()
         {
@@ -381,7 +398,7 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         {
             SeleniumHelper.WaitUntilElementIsVisible(
                     By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
-                    (x => x.VehicleDetailsTitleText)), WebDriver);
+                    (x => x.DriverDetailsTitleText)), WebDriver);
             var a = DriverDetailsTitleText.Text;
             return SeleniumHelper.WaitUntilTextToBePresentInElement(DriverDetailsTitleText, WebDriver, ClaimsConstants.DriverDetailsText);
         }
