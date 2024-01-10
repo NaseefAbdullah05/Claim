@@ -593,6 +593,31 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             }
         }
 
+        [When(@"I fill out all required fill in claim information page")]
+        public void WhenIFillOutAllRequiredFillInClaimInformationPage()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectLossCause, 1);
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectLocationType, 1);
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectLossCauseSubType, 1);
+                Pages.ClaimCenterHomePage.DescreptionTextBox.Click();
+                Pages.ClaimCenterHomePage.DescreptionTextBox.SendKeys("Loss Cause");
+                Pages.ClaimCenterHomePage.YesInsuredVehicleDriverEmployment.Click();
+                Pages.ClaimCenterHomePage.NoCommercialVehicle.Click();
+                Pages.ClaimCenterHomePage.NoLossOccured.Click();
+               // Pages.ClaimCenterHomePage.YesDriverLoss.Click();
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectLocation, 1);
+                Pages.ClaimCenterHomePage.NoFirstNotice.Click();
+                Pages.ClaimCenterHomePage.NoPoliceResponse.Click();
+
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
 
 
 

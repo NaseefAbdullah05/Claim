@@ -121,6 +121,7 @@ When I click ok button
 Then I am reidrected to vehicle details page
 When I click ok button on vehicle details page
 Then I am redirected to claim information page
+When I fill out all required fill in claim information page
 
 
 

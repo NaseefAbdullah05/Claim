@@ -412,6 +412,8 @@ testRunner.Then("I am reidrected to vehicle details page", ((string)(null)), ((T
 testRunner.When("I click ok button on vehicle details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 123
 testRunner.Then("I am redirected to claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 124
+testRunner.When("I fill out all required fill in claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

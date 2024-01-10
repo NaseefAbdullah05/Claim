@@ -201,6 +201,40 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLVehicleIncidentPopup-FNOLVehicleIncidentScreen-Update']")]
         public IWebElement OkButtonOnVehicleDetails { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Claim_LossCause']")]
+        public IWebElement SelectLossCause { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-LossCause1']")]
+        public IWebElement SelectLossCauseSubType { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Claim_Locationtype']")]
+        public IWebElement SelectLocationType { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Description']")]
+        public IWebElement DescreptionTextBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Claim_EmploymentCourse_0']")]
+        public IWebElement YesInsuredVehicleDriverEmployment { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Claim_CommercialVehicle_1']")]
+        public IWebElement NoCommercialVehicle { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Claim_ReparFacilityLoss_1']")]
+        public IWebElement NoLossOccured { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-DriveratLoss_0']")]
+        public IWebElement YesDriverLoss { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-AddressDetailInputSetRef-CCLossDetailsAddressInputSet-globalAddressContainer-Address_Picker']")]
+        public IWebElement SelectLocation { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Notification_FirstNoticeSuit_1']")]
+        public IWebElement NoFirstNotice { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Status_PoliceResponse_1']")]
+        public IWebElement NoPoliceResponse { get; set; }
+
+
         public override void GoTo()
         {
             string url = BaseAddress;
