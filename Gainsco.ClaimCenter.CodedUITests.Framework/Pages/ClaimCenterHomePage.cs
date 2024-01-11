@@ -234,6 +234,11 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_NewLossDetailsScreen-LossDetailsAddressDV-Status_PoliceResponse_1']")]
         public IWebElement NoPoliceResponse { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-ttlBar']")]
+        public IWebElement ServiceScreenTitleText { get; set; }
+
+
+
 
         public override void GoTo()
         {
@@ -435,6 +440,14 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
                     (x => x.DriverDetailsTitleText)), WebDriver);
             var a = DriverDetailsTitleText.Text;
             return SeleniumHelper.WaitUntilTextToBePresentInElement(DriverDetailsTitleText, WebDriver, ClaimsConstants.DriverDetailsText);
+        }
+
+        public virtual bool IsAtServiceScreen()
+        {
+            SeleniumHelper.WaitUntilElementIsVisible(
+                    By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
+                    (x => x.ServiceScreenTitleText)), WebDriver);
+            return SeleniumHelper.WaitUntilTextToBePresentInElement(ServiceScreenTitleText, WebDriver, ClaimsConstants.ServiceScreenText);
         }
 
         public override bool IsAt()

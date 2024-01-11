@@ -390,11 +390,11 @@ testRunner.Then("I am redirected to driver details page", ((string)(null)), ((Te
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Back to Claim information page")]
+        [NUnit.Framework.DescriptionAttribute("Service page redirection")]
         [NUnit.Framework.CategoryAttribute("AllScenarios")]
-        public virtual void BackToClaimInformationPage()
+        public virtual void ServicePageRedirection()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Back to Claim information page", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Service page redirection", new string[] {
                         "AllScenarios"});
 #line 116
 this.ScenarioSetup(scenarioInfo);
@@ -414,6 +414,10 @@ testRunner.When("I click ok button on vehicle details page", ((string)(null)), (
 testRunner.Then("I am redirected to claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 124
 testRunner.When("I fill out all required fill in claim information page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 125
+testRunner.When("I click on next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 126
+testRunner.Then("I am redirected to service screen page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

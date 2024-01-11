@@ -113,7 +113,7 @@ And I click add driver button
 Then I am redirected to driver details page
 
 @AllScenarios
-Scenario: Back to Claim information page
+Scenario: Service page redirection
 Given I am at driver details page
 When I select a person
 And relation to insured
@@ -122,6 +122,8 @@ Then I am reidrected to vehicle details page
 When I click ok button on vehicle details page
 Then I am redirected to claim information page
 When I fill out all required fill in claim information page
+When I click on next button
+Then I am redirected to service screen page
 
 
 

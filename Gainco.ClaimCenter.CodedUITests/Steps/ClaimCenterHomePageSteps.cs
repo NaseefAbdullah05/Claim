@@ -606,8 +606,8 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 Pages.ClaimCenterHomePage.YesInsuredVehicleDriverEmployment.Click();
                 Pages.ClaimCenterHomePage.NoCommercialVehicle.Click();
                 Pages.ClaimCenterHomePage.NoLossOccured.Click();
-               // Pages.ClaimCenterHomePage.YesDriverLoss.Click();
-                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectLocation, 1);
+               //Pages.ClaimCenterHomePage.YesDriverLoss.Click();
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectLocation, 0);
                 Pages.ClaimCenterHomePage.NoFirstNotice.Click();
                 Pages.ClaimCenterHomePage.NoPoliceResponse.Click();
 
@@ -824,6 +824,21 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+
+        [Then(@"I am redirected to service screen page")]
+        public void ThenIAmRedirectedToServiceScreenPage()
+        {
+            try
+            {
+                Assert.IsTrue(Pages.ClaimCenterHomePage.IsAtServiceScreen());
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+
 
 
 
