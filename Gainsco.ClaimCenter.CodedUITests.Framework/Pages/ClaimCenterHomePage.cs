@@ -237,6 +237,47 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-ttlBar']")]
         public IWebElement ServiceScreenTitleText { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-_checkbox']")]
+        public IWebElement RentalCheckBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-VehicleIncidentTowingDV-TowingInputGroup-_checkbox']")]
+        public IWebElement TowingCheckBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-AppraisalServiceDV-AppraisalServiceInputSet-AppraisalServiceInputSet-AppraisalServiceInputGroup-_checkbox']")]
+        public IWebElement AppraisalCheckBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-VehicleIncidentAutoBodyDV-AutobodyInputGroup-_checkbox']")]
+        public IWebElement AutoBodyCheckBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-RentalBeginDate']")]
+        public IWebElement RentalBeginDateBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-RentalEndDate']")]
+        public IWebElement RentalEndDateBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-RentalRate']")]
+        public IWebElement RentalDailyRateBox { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-RentalAgency']")]
+        public IWebElement SelectRentalAgency { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-AppraisalServiceDV-AppraisalServiceInputSet-AppraisalServiceInputSet-AppraisalServiceInputGroup-Assessor_Picker']")]
+        public IWebElement SelectInitialAssessor { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-AppraisalServiceDV-AppraisalServiceInputSet-AppraisalServiceInputSet-AppraisalServiceInputGroup-OtherServiceRequestInfo-NewServiceRequestInstructionInputSet-ServiceAddressPicker']")]
+        public IWebElement SelectAppraisalLocation { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-OtherServiceRequestInfo-NewServiceRequestInstructionInputSet-ServiceAddressPicker']")]
+        public IWebElement SelectPickUpLocation { get; set; }
+
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_AssignSaveScreen-ttlBar']")]
+        public IWebElement SaveAndAssignTitleText { get; set; }
+
+
+
+
+
+
 
 
 
