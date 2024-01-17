@@ -252,6 +252,9 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-RentalBeginDate']")]
         public IWebElement RentalBeginDateBox { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[contains(@class, 'gw-datePicker--today gw-button-secondary')]")]
+        public IWebElement TodayButton { get; set; }
+
         [FindsBy(How = How.XPath, Using = ".//*[@name='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_ServicesScreen-0-VehicleIncidentPanelSet-RentalServiceDV-RentalServiceInputSet-RentalServiceInputSet-RentalInputGroup-RentalEndDate']")]
         public IWebElement RentalEndDateBox { get; set; }
 
@@ -273,13 +276,17 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
         [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_AssignSaveScreen-ttlBar']")]
         public IWebElement SaveAndAssignTitleText { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_AssignSaveScreen-ttlBar']")]
+        public IWebElement SaveAndAssignScreenTitleText { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_AssignSaveScreen-NewExposureLV_tb-AddExposure']")]
+        public IWebElement NewExposureButton { get; set; }
 
+        [FindsBy(How = How.XPath, Using = ".//*[@id='FNOLWizard-AutoWorkersCompWizardStepSet-FNOLWizard_AssignSaveScreen-NewExposureLV_tb-AddExposure-0-item']")]
+        public IWebElement FirstItemInNewExposure { get; set; }
 
-
-
-
-
+        [FindsBy(How = How.XPath, Using = "//div[@aria-label='Comprehensive']/parent::div")]
+        public IList <IWebElement> CollisionId { get; set; }
 
         public override void GoTo()
         {
@@ -489,6 +496,25 @@ namespace Gainsco.ClaimCenter.CodedUITests.Framework.Pages
                     By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
                     (x => x.ServiceScreenTitleText)), WebDriver);
             return SeleniumHelper.WaitUntilTextToBePresentInElement(ServiceScreenTitleText, WebDriver, ClaimsConstants.ServiceScreenText);
+        }
+
+        public virtual bool IsAtSaveAndAssignScreen()
+        {
+            SeleniumHelper.WaitUntilElementIsVisible(
+                    By.XPath(SeleniumHelper.GetLocator<ClaimCenterHomePage>
+                    (x => x.SaveAndAssignScreenTitleText)), WebDriver);
+            return SeleniumHelper.WaitUntilTextToBePresentInElement(SaveAndAssignScreenTitleText, WebDriver, ClaimsConstants.SaveAndAssignScreenText);
+        }
+
+        public void JavaScriptClick(IWebElement element)
+        {
+            IJavaScriptExecutor executor = (IJavaScriptExecutor)WebDriver;
+            executor.ExecuteScript("arguments[0].click();", element);
+        }
+
+        public void HoverAndClick(IWebElement element1, IWebElement element2)
+        {
+            SeleniumHelper.HoverAndClick(WebDriver, element1, element2);
         }
 
         public override bool IsAt()

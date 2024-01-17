@@ -125,6 +125,24 @@ When I fill out all required fill in claim information page
 When I click on next button
 Then I am redirected to service screen page
 
+@AllScenarios
+Scenario: Save and Assign claim page redirection
+Given I am at driver details page
+When I select a person
+And relation to insured
+When I click ok button
+Then I am reidrected to vehicle details page
+When I click ok button on vehicle details page
+Then I am redirected to claim information page
+When I fill out all required fill in claim information page
+When I click on next button
+Then I am redirected to service screen page
+When I fill out all required fill in service page
+When I click on next button
+Then I am redirected to save and assign claim page
+When I Select collision as exposure
+
+
 
 
 

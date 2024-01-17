@@ -4,8 +4,10 @@ using Gainsco.ClaimCenter.CodedUITests.ScenarioContexts;
 using Gainsco.CodedUITests.Common.EnumType;
 using Gainsco.CodedUITests.Common.Logging;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Linq;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace Gainsco.ClaimCenter.CodedUITests.Steps
@@ -408,6 +410,7 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
             try
             {
                 Pages.ClaimCenterHomePage.NextButton.Click();
+                Thread.Sleep(5000);
             }
             catch (Exception ex)
             {
@@ -617,6 +620,66 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+        [When(@"I fill out all required fill in service page")]
+        public void WhenIFillOutAllRequiredFillInServicePage()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.RentalCheckBox.Click();
+                Thread.Sleep(2000);
+                Pages.ClaimCenterHomePage.RentalBeginDateBox.SendKeys("01/01/2024");
+                try
+                {
+                    Pages.ClaimCenterHomePage.TodayButton.Click();
+                }
+                catch(Exception e)
+                {
+                    var a = e.ToString();
+                } 
+                Pages.ClaimCenterHomePage.RentalEndDateBox.Click();
+                Pages.ClaimCenterHomePage.RentalEndDateBox.SendKeys("06/01/2024");
+                Pages.ClaimCenterHomePage.RentalDailyRateBox.Click();
+                Pages.ClaimCenterHomePage.RentalDailyRateBox.SendKeys("50");
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectRentalAgency, 1);
+                Pages.ClaimCenterHomePage.AppraisalCheckBox.Click();
+                Thread.Sleep(2000);
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectInitialAssessor, 1);
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectAppraisalLocation, 1);
+                //Pages.ClaimCenterHomePage.AppraisalsStatusText.Click();
+                Pages.ClaimCenterHomePage.SelectBasicInformation(Pages.ClaimCenterHomePage.SelectPickUpLocation, 1);
+
+
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+        [When(@"I Select collision as exposure")]
+        public void WhenISelectCollisionAsExposure()
+        {
+            try
+            {
+                Pages.ClaimCenterHomePage.NewExposureButton.Click();
+
+               // Pages.ClaimCenterHomePage.HoverAndClick(Pages.ClaimCenterHomePage.FirstItemInNewExposure, Pages.ClaimCenterHomePage.CollisionId.ElementAt(0));
+                //Pages.ClaimCenterHomePage.NewExposureButton.Click();
+                Pages.ClaimCenterHomePage.FirstItemInNewExposure.Click();
+                Pages.ClaimCenterHomePage.FirstItemInNewExposure.Click();
+                Pages.ClaimCenterHomePage.CollisionId.ElementAt(0).SendKeys(Keys.Enter);
+                Thread.Sleep(6000);
+                //var a = Pages.ClaimCenterHomePage.CollisionId.Count;
+                //Pages.ClaimCenterHomePage.JavaScriptClick(Pages.ClaimCenterHomePage.CollisionId.ElementAt(0));
+                     //Pages.ClaimCenterHomePage.JavaScriptClick(Pages.ClaimCenterHomePage.CollisionId.ElementAt(0));
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
+
 
 
 
@@ -837,6 +900,20 @@ namespace Gainsco.ClaimCenter.CodedUITests.Steps
                 HandleStepException(_scenarioContext, ex);
             }
         }
+
+        [Then(@"I am redirected to save and assign claim page")]
+        public void ThenIAmRedirectedToSaveAndAssignClaimPage()
+        {
+            try
+            {
+                Assert.IsTrue(Pages.ClaimCenterHomePage.IsAtSaveAndAssignScreen());
+            }
+            catch (Exception ex)
+            {
+                HandleStepException(_scenarioContext, ex);
+            }
+        }
+
 
 
 
